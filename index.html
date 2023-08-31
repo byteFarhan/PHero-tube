@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube</title>
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="./images/fav-icon.svg" type="image/x-icon">
+    <!-- Google Font  Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: "'Inter', sans-serif"
+                    },
+                    colors: {
+                        primary: '#FF1F3D',
+                        title: '#171717',
+                        heading: '#252525',
+                        'unice': 'rgba(23, 23, 23, 0.70)',
+                        btn: 'rgba(37, 37, 37, 0.15)',
+                        //     'dark-2': 'rgba(18, 18, 18, 0.80)'
+                    }
+                },
+                // container: {
+                //     center: true,
+                //     padding: {
+                //         DEFAULT: '1.5rem',
+                //         md: '1rem',
+                //         lg: '4rem',
+                //         xl: '5rem',
+                //         '2xl': '6rem'
+                //     }
+                // }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3,
+        p {
+            color: #171717;
+        }
+    </style>
+</head>
+
+<body class="font-inter px-5  md:px-10 lg:px16 my-5 lg:my-8">
+    <header>
+        <nav class="flex justify-between items-center gap-4 md:gap-0 flex-col md:flex-row">
+            <div class="order-1">
+                <img src="./images/Logo.png" alt="">
+            </div>
+            <button class="btn bg-btn text-heading order-3 md:order-2">Sort by view</button>
+            <button class="btn bg-primary text-white hover:bg-primary order-2 md:order-3">Blog</button>
+        </nav>
+        <hr class=" border-unice mx-auto mt-5 md:mt-8">
+    </header>
+    <main>
+
+    </main>
+    <footer></footer>
+</body>
+
+</html>
