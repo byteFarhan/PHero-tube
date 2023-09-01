@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHero Tube Blog</title>
+    <!-- favIcon -->
+    <link rel="shortcut icon" href="./images/fav-icon.svg" type="image/x-icon">
+    <!-- Google Font  Inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: "'Inter', sans-serif"
+                    },
+                    colors: {
+                        primary: '#FF1F3D',
+                        title: '#171717',
+                        heading: '#252525',
+                        'unice': 'rgba(23, 23, 23, 0.70)',
+                        btn: 'rgba(37, 37, 37, 0.15)',
+                        //     'dark-2': 'rgba(18, 18, 18, 0.80)'
+                    }
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '1.5rem',
+                        md: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3,
+        p {
+            color: #171717;
+        }
+    </style>
+</head>
+
+
+<body class="container my-8">
+    <header>
+        <nav class="flex items-center justify-between gap-4 md:gap-0 ">
+            <div class="order-1">
+                <img src="./images/Logo.png" alt="">
+            </div>
+            <button onclick="gohome()" id="btn-home"
+                class="order-2 text-white btn bg-primary hover:bg-primary md:order-3">Go Home</button>
+        </nav>
+        <hr class="mx-auto mt-5 border-unice md:mt-8">
+    </header>
+    <main>
+        <!-- The scope of var, let, and const! -->
+        <section class="px-4 py-8 my-8 space-y-4">
+            <h1 class="text-3xl font-semibold">The scope of var, let, and const!</h1>
+            <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eaque vel
+                voluptatibus ab
+                similique ad
+                molestias quaerat rerum cumque debitis vero quae dolores inventore distinctio dolorem maxime nemo totam
+                nostrum. Voluptatum reiciendis, dolorum nesciunt quam inventore et soluta voluptas consectetur impedit
+                cupiditate fugit fugiat incidunt perspiciatis, eveniet, atque veniam! Amet!</p>
+        </section>
+        <!--  the use cases of null and undefined! -->
+        <section class="px-4 py-8 my-8 space-y-4">
+            <h1 class="text-3xl font-semibold">The use cases of null and undefined!</h1>
+            <p class="text-lg font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eaque vel
+                voluptatibus ab
+                similique ad
+                molestias quaerat rerum cumque debitis vero quae dolores inventore distinctio dolorem maxime nemo totam
+                nostrum. Voluptatum reiciendis, dolorum nesciunt quam inventore et soluta voluptas consectetur impedit
+                cupiditate fugit fugiat incidunt perspiciatis, eveniet, atque veniam! Amet!</p>
+        </section>
+        <!-- What do you mean by REST API? -->
+        <section class="px-4 py-8 my-8 space-y-4">
+            <h1 class="text-3xl font-semibold">The meaning of REST API!</h1>
+            <p class="text-lg font-medium"><span class="text-xl font-bold ">REST API</span> is a way for computers to
+                talk
+                to each other
+                over the internet. <br>
+                It's like a waiter or menu at a restaurant, where we can ask for different dishes using simple
+                rules. It helps
+                apps and websites share information and do things together, like getting weather data or posting photos
+                etc. REST is a set of rules that make this process organized and predictable. It helps different apps
+                communicate and share data on the internet smoothly, just like ordering our favorite dish at a
+                restaurant.
+            </p>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        function gohome() {
+            window.location.href = 'index.html'
+        }
+    </script>
+</body>
+
+</html>
